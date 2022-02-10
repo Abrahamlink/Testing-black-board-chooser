@@ -46,18 +46,25 @@ body {
 #chooser {
     font-size: 24px;
     color: #f1f1f1;
-    background: linear-gradient(135deg, rgba(83,83,83,1) 0%, rgba(18,18,18,1) 100%);
+    /* background: linear-gradient(135deg, rgba(83,83,83,1) 0%, rgba(18,18,18,1) 100%); */
+    background: linear-gradient(45deg, #765df2 0%, #5df2f2 100%);
     padding: 10px 30px 13px;
-    border: 2px solid #333;
+    box-shadow: 0 5px 10px #33333380;
     border-radius: 4px;
     cursor: pointer;
     text-align: center;
     margin: 0;
-    transition: .2s ease-in-out all;
+    transition: .15s ease-in-out all;
     font-family: 'Montserrat', sans-serif !important;
 }
 #chooser:hover {
     opacity: .9;
+}
+#chooser:active {
+    opacity: 1;
+    transition: .1s linear all;
+    transform: translateY(4px);
+    box-shadow: 0 0 10px #33333380;
 }
 
 .hello span {
